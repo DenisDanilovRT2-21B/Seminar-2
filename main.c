@@ -35,6 +35,7 @@ void create(void) {
                 matrix[begin][end] = matrix[begin][end] + 1;
                 matrix[end][begin] = matrix[end][begin] + 1;
                 conn[begin][end] = matrix[begin][end];
+                conn[end][begin] = 0;
             }
             else {
             matrix[begin][end] = 1;
